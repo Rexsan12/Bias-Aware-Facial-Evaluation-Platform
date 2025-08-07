@@ -1,0 +1,33 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPep8Inspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="E251" />
+          <option value="E305" />
+          <option value="E225" />
+          <option value="E303" />
+          <option value="E302" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="checkuser_or_animals.PiCamera" />
+          <option value="checkuser_or_animals.PiRGBArray" />
+          <option value="checkuser_or_animals.pickle" />
+          <option value="checkuser_or_animals.face_recognition" />
+          <option value="checkuser_or_animals.door" />
+          <option value="checkuser_or_animals.sleep" />
+          <option value="checkuser_or_animals.servocontrol" />
+          <option value="face_recognition" />
+          <option value="cv2" />
+          <option value="ultrasonic.RPi" />
+          <option value="server._name_" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
