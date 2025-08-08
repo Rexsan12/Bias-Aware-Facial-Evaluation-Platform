@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="104d21b9-51e4-45d8-82a1-4f92ca0e77f1" name="Changes" comment="Initial Commit" />
+    <list default="true" id="104d21b9-51e4-45d8-82a1-4f92ca0e77f1" name="Changes" comment="First Commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -86,7 +86,21 @@
       <option name="project" value="LOCAL" />
       <updated>1754578840889</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Revert &quot;Initial Commit&quot;&#10;&#10;This reverts commit cccc9869476ca1da89e766c7a25ce028ac2f9d32.">
+      <created>1754655679358</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1754655679360</updated>
+    </task>
+    <task id="LOCAL-00004" summary="First Commit">
+      <created>1754655716985</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1754655716985</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -102,6 +116,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
+    <MESSAGE value="Revert &quot;Initial Commit&quot;&#10;&#10;This reverts commit cccc9869476ca1da89e766c7a25ce028ac2f9d32." />
+    <MESSAGE value="First Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="First Commit" />
   </component>
 </project>
