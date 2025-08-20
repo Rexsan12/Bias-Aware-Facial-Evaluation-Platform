@@ -1,21 +1,29 @@
 import pandas as pd
 import os
 
+
 def _verify_images_exist(df, images_dir):
     """
     Check if all images listed in the dataframe exist in the given directory.
     Returns a list of missing image names.
     """
+    if "image_path" not in df.columns:
+        return []
+
     missing_images = [
-        img for img in df['image_path']
-        if not os.path.exists(os.path.join(images_dir, img))
+        img for img in df["image_path"]
+        if not os.path.exists(os.path.join(images_dir, str(img)))
     ]
     return missing_images
 
 
 def load_fairface_dataset():
-    csv_path = 'datasets/fairface_labels.csv'
-    images_dir = 'datasets/FairFace'
+    """
+    Load FairFace dataset from CSV and verify images exist.
+    Expects: datasets/fairface_labels.csv + datasets/FairFace/
+    """
+    csv_path = "datasets/fairface_labels.csv"
+    images_dir = "datasets/FairFace"
 
     if not os.path.exists(csv_path):
         return None, "[ERROR] FairFace labels file not found."
@@ -25,12 +33,15 @@ def load_fairface_dataset():
     try:
         df = pd.read_csv(csv_path)
 
-        required_cols = {'file', 'gender', 'race'}
+        # Required columns in FairFace
+        required_cols = {"file", "gender", "race"}
         if not required_cols.issubset(df.columns):
-            return None, f"[ERROR] Missing columns in CSV: {required_cols - set(df.columns)}"
+            return None, f"[ERROR] Missing columns in FairFace CSV: {required_cols - set(df.columns)}"
 
-        df = df.rename(columns={'file': 'image_path'})
+        # Normalize column name
+        df = df.rename(columns={"file": "image_path"})
 
+        # Verify images exist
         missing_images = _verify_images_exist(df, images_dir)
         msg = f"[INFO] FairFace loaded successfully with {len(df)} records."
         if missing_images:
@@ -43,8 +54,12 @@ def load_fairface_dataset():
 
 
 def load_utkface_dataset():
-    csv_path = 'datasets/utkface_labels.csv'
-    images_dir = 'datasets/UTKFace'
+    """
+    Load UTKFace dataset from CSV and verify images exist.
+    Expects: datasets/utkface_labels.csv + datasets/UTKFace/
+    """
+    csv_path = "datasets/utkface_labels.csv"
+    images_dir = "datasets/UTKFace"
 
     if not os.path.exists(csv_path):
         return None, "[ERROR] UTKFace labels file not found."
@@ -54,10 +69,12 @@ def load_utkface_dataset():
     try:
         df = pd.read_csv(csv_path)
 
-        required_cols = {'image_path', 'gender', 'race'}
+        # Required columns in UTKFace
+        required_cols = {"image_path", "gender", "race"}
         if not required_cols.issubset(df.columns):
-            return None, f"[ERROR] Missing columns in CSV: {required_cols - set(df.columns)}"
+            return None, f"[ERROR] Missing columns in UTKFace CSV: {required_cols - set(df.columns)}"
 
+        # Verify images exist
         missing_images = _verify_images_exist(df, images_dir)
         msg = f"[INFO] UTKFace loaded successfully with {len(df)} records."
         if missing_images:
