@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="104d21b9-51e4-45d8-82a1-4f92ca0e77f1" name="Changes" comment="run-bias-evalutio-implementations">
-      <change afterPath="$PROJECT_DIR$/test/test_main-menu.py" afterDir="false" />
+    <list default="true" id="104d21b9-51e4-45d8-82a1-4f92ca0e77f1" name="Changes" comment="unit test added">
+      <change afterPath="$PROJECT_DIR$/generate_dataset_summary.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/dataset_loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/dataset_loader.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +52,49 @@
       <recent name="C:\Users\REX\PycharmProjects\Bias-Aware-Facial-Recognition\datasets" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_main-menu.test_upload_image">
+  <component name="RunManager" selected="Python.main">
+    <configuration name="generate_dataset_summary" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Bias-Aware-Facial-Recognition" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/generate_dataset_summary.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="generate_utkface_labels" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Bias-Aware-Facial-Recognition" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/generate_utkface_labels.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Bias-Aware-Facial-Recognition" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -73,34 +114,6 @@
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for test_main-menu.test_about_section" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="Bias-Aware-Facial-Recognition" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_main-menu.test_about_section&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for test_main-menu.test_exit_program" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="Bias-Aware-Facial-Recognition" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_main-menu.test_exit_program&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <configuration name="Python tests for test_main-menu.test_load_utkface_dataset" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
@@ -147,11 +160,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for test_main-menu.test_upload_image" />
+        <item itemvalue="Python.generate_utkface_labels" />
+        <item itemvalue="Python.generate_dataset_summary" />
         <item itemvalue="Python tests.Python tests in test_main-menu.py" />
+        <item itemvalue="Python tests.Python tests for test_main-menu.test_upload_image" />
         <item itemvalue="Python tests.Python tests for test_main-menu.test_load_utkface_dataset" />
-        <item itemvalue="Python tests.Python tests for test_main-menu.test_about_section" />
-        <item itemvalue="Python tests.Python tests for test_main-menu.test_exit_program" />
       </list>
     </recent_temporary>
   </component>
@@ -248,7 +261,14 @@
       <option name="project" value="LOCAL" />
       <updated>1755540198367</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="unit test added">
+      <created>1755683133174</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1755683133174</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -273,6 +293,7 @@
     <MESSAGE value="datset loader" />
     <MESSAGE value="write the generate_utkface_labels" />
     <MESSAGE value="run-bias-evalutio-implementations" />
-    <option name="LAST_COMMIT_MESSAGE" value="run-bias-evalutio-implementations" />
+    <MESSAGE value="unit test added" />
+    <option name="LAST_COMMIT_MESSAGE" value="unit test added" />
   </component>
 </project>
